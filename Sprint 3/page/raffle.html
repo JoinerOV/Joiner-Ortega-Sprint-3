@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle</title>
+    <link rel="shortcut icon" href="../Imagenes/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoNavbar">
+            <img class="logo" src="../Imagenes/logo.png" alt="Aqui va el logo de un helado">
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="./aboutUs.html">About us</a>
+                <a class="active" href="./contact.html">Contact</a>
+                <a class="active" href="./moreInformation.html">More Information</a>
+                <a class="active" href="./benefit.html">Benefit And Tips</a>
+                <a class="active" href="./raffle.html">Raffle</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <main class="main-form">
+        <section class="titulo">
+            <h1>Raffle</h1>
+            <h2 class="subtitulo">You can collaborate to hold an exhibition event and parcipate in a raffle to win an</h2>
+        </section>
+        <div class="content">
+            <div class="location">
+                <h2>Our location is located at:</h2>
+                <div class="location-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2742785536!2d-118.69192264248988!3d34.02016130744616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c63a1d2f1a63%3A0x7202c93c3b18ec44!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1598982801776!5m2!1sen!2s"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="../show_data.html" method="get">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+    
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+    
+                    <label for="meetZoom">Choose Meet or Zoom</label>
+                    <select id="meetZoom" name="meetZoom">
+                        <option value="meet">Meet</option>
+                        <option value="zoom">Zoom</option>
+                    </select>
+    
+                    <label for="date">Choose Date</label>
+                    <input type="date" id="date" name="date" required>
+    
+                    <label>Payment Options</label>
+                    <div class="payment-options">
+                        <label><input type="radio" name="payment" value="cash"> Cash</label>
+                        <label><input type="radio" name="payment" value="credit-card"> Credit Card</label>
+                        <label><input type="radio" name="payment" value="debit-card"> Debit Card</label>
+                    </div>
+    
+                    <label for="message">Message (Optional)</label>
+                    <textarea id="message" name="message"></textarea>
+    
+                    <div class="terms">
+                        <label><input type="checkbox" required> I accept terms and conditions...</label>
+                    </div>
+    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created By: Joiner Ortega</p>
+    </footer>
+</body>
+</html>
